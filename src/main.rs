@@ -154,7 +154,7 @@ fn populate(c_n: usize, h_n: usize) -> Vec<EntityType> {
 }
 
 fn main() {
-    let mut left: Vec<EntityType> = populate(4, 4);
+    let mut left: Vec<EntityType> = populate(CANNIBAL, HUMAN);
     let mut right: Vec<EntityType> = Vec::new();
     let mut boat: BoatStatus = BoatStatus::Left;
     print_state(&left, &right, &boat);
